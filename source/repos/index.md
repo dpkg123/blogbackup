@@ -3,7 +3,7 @@ title: repos
 date: 2023-04-10 14:16:38
 ---
 # 软件源地址
- [地址](https://dpkg123.github.io/repos/)
+ [地址](https://dpkg123.github.io/repos/debian)
 
 # 软件列表
 | name                         | version     | architecture |
