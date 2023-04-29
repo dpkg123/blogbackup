@@ -35,7 +35,7 @@ $ git clone https://github.com/xxx/blogbackup
 ```
 会提示
 ```text
-正克隆到 'blogbackip'...
+正克隆到 'blogbackup'...
 警告：您似乎克隆了一个空仓库。
 ```
 将文件放入此目录然后提交即可
