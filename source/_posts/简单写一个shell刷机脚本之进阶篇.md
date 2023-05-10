@@ -81,7 +81,9 @@ else
 fastboot flash boot magisk-boot.img
 fastboot reboot
 fi
+```
 当然如果想告诉用户刷入失败的原因的话可以整一个if嵌套循环。
+```bash
 adb devices
 if [ $? -ne 0 ]
 then

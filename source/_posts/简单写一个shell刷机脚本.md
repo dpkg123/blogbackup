@@ -7,7 +7,7 @@ tags:
 - 刷机
 ---
 # 前言
-相比各种编程语言，linux shell脚本具有容易上手，运行速度快，轻量，跨架构运行，便于编写和测试等优点。如果想做的项目比较简单，或者你是没有编程经验的新手，那选择bat脚本应该会比较合适。
+相比各种编程语言，linux shell脚本具有容易上手，运行速度快，轻量，跨架构运行，便于编写和测试等优点。如果想做的项目比较简单，或者你是没有编程经验的新手，那选择shell脚本应该会比较合适。
 学会linux shell能做什么？可以完成大部分刷机操作的自动化，写各种一键工具等等。
 linux shell简介
 Shell是一个命令解释器，它解释由用户输入的命令并且把它们送到内核。不仅如此，Shell有自己的编程语言用于对命令的编辑，它允许用户编写由shell命令组成的程序。Shell编程语言具有普通编程语言的很多特点，比如它也有循环结构和分支控制结构等，用这种编程语言编写的Shell程序与其他应用程序具有同样的效果。
@@ -16,17 +16,22 @@ shell脚本是指后缀为.sh或其他后缀的脚本文件。新建一个txt文
 确定一个目标是写shell脚本的第一步。本教程将带领大家完成一个最简单的fastboot刷入boot脚本。
 命令简介
 本教程用到的命令如下：
-echo :显示文字
-sleep :延迟多少时间后执行下一条指令
-fastboot flash xxx xxx.img:调用/usr/bin/fastboot刷入xxx.img
-if+else :如果表达式为真则表达if语句内的语句代码，否则表达else内的语句代码。
-exit: 退出脚本
+- echo :显示文字
+- sleep :延迟多少时间后执行下一条指令
+- fastboot flash xxx xxx.img:调用/usr/bin/fastboot刷入xxx.img
+- if+else :如果表达式为真则表达if语句内的语句代码，否则表达else内的语句代码。
+- exit: 退出脚本
 # 实操
 这里以debian 12和nano文本编辑器为例，其他操作系统仅供参考
 新建一个文本文件并重命名为flash.sh
 可以使用touch命令创建或者使用文本编辑器创建
-touch flash.sh
-或nano flash.sh
+```bash
+$ touch flash.sh
+```
+或
+``````bash
+$ nano flash.sh
+```
 然后将要刷入的boot.img也放到同一个文件夹中。然后编辑flash.sh(如果使用文本编辑器创建的话会直接跳转到编辑界面)
 然后在脚本第一行写
 ```bash

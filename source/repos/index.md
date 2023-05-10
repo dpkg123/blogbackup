@@ -23,6 +23,9 @@ date: 2023-04-10 14:16:38
 | tenvideo                     | 1.0.10      | amd64        |
 | app.web.163.mail             | 1.0.0       | all          |
 | app.web.baidu.map            | 1.0.0       | all          |
+| appeditor                    | 1.1.1       | amd64,arm64  |
+| ciano                        | 0.2.40      | amd64,arm64  |
+| linuxqq                      | 2.0.0-b2    | amd64,arm64  |
 
 # To do 
 - [x] 迁移软件仓库
