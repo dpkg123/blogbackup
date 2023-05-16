@@ -120,15 +120,20 @@ smart_menu:
   aboutme: '关于我'
 
 friends:
+  图床: https://dabao1955.github.io/image 
   原来的博客: https://dabao1955.github.io
   Adminzhangの个人博客: https://www.a9-9.top/
   cyp0633的blog: https://cyp0633.icu
   小码同学: https://blog.hikki.site
   U.M.R-Powered-Blog: https://umrpowered.codeberg.page/
-  叶落小栈: https://www.leavesfall.cn/
+  醉浪的个人博客: https://blog.zuilang.tk/
   云遇未晚: https://blog.tryrun.top/
+  ialtone的小站: https://ialtone.xyz
+  贰猹的小窝: https://noionion.top/
+  甜鱼的赛博小屋: https://ayu.land/
+
   
-aboutme: 新的博客<br><br>之前的博客被我删除了<br>谢谢大家的支持<br>原来的博客https://dabao1955.github.io
+aboutme: 透明小菜鸡一枚<br><br>目前正在学习C语言<br>正在移植postmarketOS到k20pro/k30pro上<br>本博客使用github-page作为网页托管平台，netlify提供cdn加速服务。<br>不知道为啥yilia主题改不了下面的文字
 
 #版权基础设定：0-关闭声明； 1-文章对应的md文件里有declare: true属性，才有版权声明； 2-所有文章均有版权声明
 #当前应用的版权协议地址。
