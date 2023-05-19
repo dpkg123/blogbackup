@@ -1,11 +1,10 @@
 name: deploy blog
 
 on:
-push:
+   push:
 
     branches: main
 
-        workflow_dispatch:
 
 jobs:
 
