@@ -1,7 +1,7 @@
 name: deploy blog
 
 on:
-push:
+   push:
 
     branches: main
 
