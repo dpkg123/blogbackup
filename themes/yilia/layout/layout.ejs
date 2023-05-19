@@ -1,4 +1,13 @@
 <%- partial('_partial/head') %>
+<!-- 雪花特效2 -->
+<% if (theme.snow2){ %>
+  <script type="text/javascript" src="/snow2.js"></script>
+<% } %>
+<!-- 《页面点击小红心 -->
+<% if (theme.love){ %>
+    <script type="text/javascript" src="/love.js"></script>
+<% } %>
+<!-- 页面点击小红心》 -->
 <body>
   <div id="container" q-class="show:isCtnShow">
     <canvas id="anm-canvas" class="anm-canvas"></canvas>

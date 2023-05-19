@@ -65,7 +65,7 @@ top: true
 # Miscellaneous
 baidu_analytics: ''
 google_analytics: ''
-favicon: /favicon.png
+favicon: /img/logo.jpg
 
 #你的头像url
 avatar: https://dpkg123.github.io/img/author/author.jpg
@@ -130,7 +130,8 @@ friends:
   云遇未晚: https://blog.tryrun.top/
   ialtone的小站: https://ialtone.xyz
   贰猹的小窝: https://noionion.top/
-  甜鱼的赛博小屋: https://ayu.land/
+  红枫依旧: https://hfyj.tk
+  KooriMoeの自留地: https://icm.moe/
 
   
 aboutme: 透明小菜鸡一枚<br><br>目前正在学习C语言<br>正在移植postmarketOS到k20pro/k30pro上<br>本博客使用github-page作为网页托管平台，netlify提供cdn加速服务。<br>不知道为啥yilia主题改不了下面的文字
@@ -161,7 +162,6 @@ clock:
 # 鼠标特效
 mouse:
   love: true
-  word: true
   
 # 雪花特效 
 # 开启后有些卡
@@ -172,3 +172,10 @@ snow:
 auto_excerpt:
   enable: true
   length: 25
+
+since: 2023
+
+
+# 是否开启字数统计
+#不需要使用，直接设置值为false，或注释掉
+word_count: true
