@@ -1,0 +1,50 @@
+name: deploy blog
+
+on:
+   push:
+
+    branches: main
+
+
+jobs:
+
+  deploy-blog:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - uses: actions/checkout@v3
+
+      - name: Setup environment
+
+        run: |
+          sudo apt update
+          sudo apt install -y git npm nodejs tar zip unzip xz-utils
+          npm i -g hexo hexo-cli
+      - name: Pull blog source
+
+        run: |
+          git clone https://github.com/dpkg123/blogbackup
+      - name: Build blog
+        run: |
+          cd blogbackup
+          cd themes
+          git clone https://github.com/jackhanyuan/hexo-theme-new-yilia.git
+          mv yilia yilia-bak
+          cp ../hexo-new-theme-yilia/themes/new-yilia ./yilia -rv
+          cd hexo-new-theme-yilia
+          npm install 
+          cd ../../
+          sudo rm -rf .git*
+          hexo cl && hexo g
+      - name: Upload blog to artifact
+
+        uses: actions/upload-artifact@v3
+
+        with:
+
+          name: blog-html
+
+          path: blogbackup/public/*
+         
