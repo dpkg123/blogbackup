@@ -200,5 +200,5 @@ inject:
   bottom:
     - <div class="aplayer no-destroy" data-id="60198" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="true"> </div>
 
-waline: true
-    serverURL: https://6-jkzfccfvq-dpkg123.vercel.app/
+waline:
+    serverURL: 'https://6-jkzfccfvq-dpkg123.vercel.app/'
