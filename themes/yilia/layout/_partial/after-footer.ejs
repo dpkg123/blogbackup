@@ -16,13 +16,6 @@
 
 <%- partial('script') %>
 
-<!--添加鼠标特效-->
-<!-- https://blog.csdn.net/weixin_41287260/article/details/103050877 -->
-<% if (theme.mouse && theme.mouse.love){ %>
-  <%- partial('post/mouse_love') %>
+<% if (theme.mathjax){ %>
+<%- partial('mathjax') %>
 <% } %>
-
-<% if (theme.mouse && theme.mouse.word){ %>
-  <%- partial('post/mouse_word') %>
-<% } %>
-<!--添加鼠标特效结束-->

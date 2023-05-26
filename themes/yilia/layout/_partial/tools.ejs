@@ -1,13 +1,13 @@
 <%
-  var hasInnerArchive = theme.smart_menu.menu.innerArchive
-  var hasFriends = theme.smart_menu.menu.friends
-  var hasAboutme = theme.smart_menu.menu.aboutme
+  var hasInnerArchive = theme.smart_menu.innerArchive
+  var hasFriends = theme.smart_menu.friends
+  var hasAboutme = theme.smart_menu.aboutme
 %>
 <div class="tools-col" q-class="show:isShow,hide:isShow|isFalse" q-on="click:stop(e)">
   <div class="tools-nav header-menu">
     <% var count = 0%>
-    <% for (var i in theme.smart_menu.menu){ %>
-      <% if (theme.smart_menu.menu[i]) { %>
+    <% for (var i in theme.smart_menu){ %>
+      <% if (theme.smart_menu[i]) { %>
       <% count++ %>
       <% } %>
     <% } %>
@@ -15,9 +15,9 @@
 
     <ul style="width: <%= ulWidth %>">
     <% var divide = 100 / count + '%' %>
-    <% for (var i in theme.smart_menu.menu){ %>
-      <% if(theme.smart_menu.menu[i]){ %>
-      <li style="width: <%= divide %>" q-on="click: openSlider(e, '<%-i%>')"><a href="javascript:void(0)" q-class="active:<%-i%>"><%= theme.smart_menu.menu[i] %></a></li>
+    <% for (var i in theme.smart_menu){ %>
+      <% if(theme.smart_menu[i]){ %>
+      <li style="width: <%= divide %>" q-on="click: openSlider(e, '<%-i%>')"><a href="javascript:void(0)" q-class="active:<%-i%>"><%= theme.smart_menu[i] %></a></li>
       <% } %>
         <%}%>
     </ul>
@@ -26,7 +26,7 @@
     <%if(hasInnerArchive){%>
     	<section class="tools-section tools-section-all" q-show="innerArchive">
         <div class="search-wrap">
-          <input class="search-ipt" q-model="search" type="text" placeholder="搜一搜">
+          <input class="search-ipt" q-model="search" type="text" placeholder="find something…">
           <i class="icon-search icon" q-show="search|isEmptyStr"></i>
           <i class="icon-close icon" q-show="search|isNotEmptyStr" q-on="click:clearChose(e)"></i>
         </div>
@@ -48,26 +48,26 @@
           <p q-show="jsonFail" style="padding: 20px; font-size: 12px;">
             缺失模块。<br/>1、请确保node版本大于6.2<br/>2、在博客根目录（注意不是yilia根目录）执行以下命令：<br/> npm i hexo-generator-json-content --save<br/><br/>
             3、在根目录_config.yml里添加配置：
-			<pre style="font-size: 12px;" q-show="jsonFail">
-			  jsonContent:
-				meta: false
-				pages: false
-				posts:
-				  title: true
-				  date: true
-				  path: true
-				  text: false
-				  raw: false
-				  content: false
-				  slug: false
-				  updated: false
-				  comments: false
-				  link: false
-				  permalink: false
-				  excerpt: false
-				  categories: false
-				  tags: true
-			</pre>
+<pre style="font-size: 12px;" q-show="jsonFail">
+  jsonContent:
+    meta: false
+    pages: false
+    posts:
+      title: true
+      date: true
+      path: true
+      text: false
+      raw: false
+      content: false
+      slug: false
+      updated: false
+      comments: false
+      link: false
+      permalink: false
+      excerpt: false
+      categories: false
+      tags: true
+</pre>
           </p>
           <li class="search-li" q-repeat="items" q-show="isShow">
             <a q-attr="href:path|urlformat" class="search-title"><i class="icon-quo-left icon"></i><span q-text="title"></span></a>
@@ -100,33 +100,9 @@
 
     <%if(hasAboutme){%>
     	<section class="tools-section tools-section-me" q-show="aboutme">
-		<div class="aboutme-wrap"> 
-			<div style="display:;color:LightSkyBlue;"> 
-				<%if(theme.yiyan && theme.yiyan.enable){%>
-					<p id="hitokoto" style="margin:0 20px 0 20px;color:GreenYellow;"></p>
-					<div style="margin:0 20px 0 20px;">
-						<p id="from" style="margin:10px;text-align:right;color:Salmon;"></p>
-					</div>	
-					<script>
-						var xmlhttp = new XMLHttpRequest();
-						xmlhttp.onreadystatechange = function() {
-								if (this.readyState == 4 && this.status == 200) {
-									yiyan = JSON.parse(this.responseText);
-									document.getElementById("hitokoto").innerHTML =yiyan.hitokoto;
-								document.getElementById("from").innerHTML ="——《"+ yiyan.from+"》";
-							 }
-						};
-						xmlhttp.open("GET", "https://v1.hitokoto.cn/?c=a&c=d&c=c", true);
-						xmlhttp.send();
-					</script>
-				<%}%>
-			
-				<br>
-				<%if(theme.aboutme){%>  
-					<p id="js-aboutme" style="margin:0 20px 0 20px;"><%=theme.aboutme%></p>
-				<%}%>
-			</div> 
-		</div> 
+  	  	<%if(theme.aboutme){%>
+  	  		<div class="aboutme-wrap" id="js-aboutme"><%=theme.aboutme%></div>
+  	  	<%}%>
     	</section>
     <%}%>
   </div>

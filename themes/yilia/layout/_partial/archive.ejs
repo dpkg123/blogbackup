@@ -5,8 +5,8 @@
   <% if (page.total > 1){ %>
     <nav id="page-nav">
       <%- paginator({
-        prev_text: '<< 上一页',
-        next_text: '下一页 >>'
+        prev_text: '&laquo; Prev',
+        next_text: 'Next &raquo;'
       }) %>
     </nav>
   <% } %>
@@ -34,16 +34,10 @@
     <% if (page.total > 1){ %>
     <nav id="page-nav">
       <%- paginator({
-        prev_text: '<< 上一页',
-        next_text: '下一页 >>'
+        prev_text: '&laquo; Prev',
+        next_text: 'Next &raquo;'
       }) %>
     </nav>
   <% } %>
 
 <% } %>
-
-<!-- 主页添加mathjax公式 -->
-<% if (theme.mathjax){ %>
-  <%- partial('mathjax') %>
-<% } %>
-<!-- 主页添加mathjax公式 -->
