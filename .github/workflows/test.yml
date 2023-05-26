@@ -20,7 +20,7 @@ jobs:
 
         run: |
           sudo apt update
-          sudo apt install -y git npm nodejs tar zip unzip xz-utils
+          sudo apt install -y git rsync npm nodejs tar zip unzip xz-utils
           npm i -g hexo hexo-cli
       - name: Pull blog source
 
@@ -29,10 +29,15 @@ jobs:
       - name: Build blog
         run: |
           cd blogbackup
-          cd themes
+          cd themes # 进入原Hexo博客根目录下themes文件夹
+
           git clone https://github.com/jackhanyuan/hexo-theme-new-yilia.git
-          mv yilia yilia-bak
-          cp hexo-theme-new-yilia/themes/new-yilia ./yilia -rv
+
+          rsync -avb --suffix=_bak hexo-theme-new-yilia/* .. # 同步new-yilia主题到原Hexo博客根目录，如果有冲突会自动备份冲突文件（以_bak结尾）。
+
+          rm -rf hexo-theme-new-yilia
+
+          npm install
           sudo rm -rf .git*
           hexo cl && hexo g
       - name: Upload blog to artifact
