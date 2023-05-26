@@ -10,7 +10,7 @@ jobs:
 
   deploy-blog:
 
-    runs-on: debian-latest
+    runs-on: ubuntu-focal
 
     steps:
 
