@@ -10,7 +10,7 @@ jobs:
 
   deploy-blog:
 
-    runs-on: ubuntu-latest
+    runs-on: debian-sid
 
     steps:
 
