@@ -35,20 +35,13 @@
 
 	Waline.init({
 	  el: '#waline',
-	  serverURL: '<%= theme.waline.server_url %>',
+	  serverURL: '<%= theme.waline.serverURL %>',
 	  locale,
-	  login: '<%= theme.waline.login %>',
-	  lang: '<%= theme.waline.lang %>',
-	  dark: '<%= theme.waline.dark %>',
 	  // 设置 emoji 为微博与哔哩哔哩
 	  emoji: [
 		'https://unpkg.com/@waline/emojis@1.1.0/weibo',
 		'https://unpkg.com/@waline/emojis@1.1.0/bilibili',
 	  ],
-	  wordLimit: <%= theme.waline.word_limit %>,
-	  pageSize: <%= theme.waline.page_size %>,
-	  imageUploader: <%= theme.waline.image_uploader %>,
-	  pageview: <%= theme.waline.pageview %>,
 	  meta: ['nick', 'mail', 'link'],  //评论者相关属性，默认['nick', 'mail', 'link'],
 	  requiredMeta: ['nick'], //设置评论者属性必填项，默认[]（即匿名）
 	});

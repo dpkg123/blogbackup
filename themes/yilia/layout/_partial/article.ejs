@@ -125,6 +125,10 @@
     }) %>
   <% } %>
 
+  <% if (theme.waline.serverURL){ %>
+    <%- partial('post/waline') %>
+    <% } %>
+
   <% if (theme.disqus || config.disqus_shortname){ %>
     <section id="comments">
       <div id="disqus_thread"></div>
