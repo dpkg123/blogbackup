@@ -22,7 +22,9 @@
           <a class="article-more-a" href="<%- url_for(post.path) %>#more"><%= theme.excerpt_link %> >></a>
         <% } %>
       <% } else { %>
-        <%- post.content %>
+        <%- strip_html(post.content).substring(0, 120) %>
+        <br>
+        <a class="article-more-a" href="<%- url_for(post.path) %>"><%= theme.excerpt_link %> >></a>
       <% } %>
 
 <% if ((theme.essayending_type === 2 || (theme.essayending_type === 1 && post.essayending)) && !index){ %>
