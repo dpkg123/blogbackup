@@ -9,15 +9,20 @@
       </header>
     <% } %>
     <div class="article-entry" itemprop="articleBody">
-      <% if (post.excerpt && index){ %>
-        <%- post.excerpt %>
-        <% if (theme.excerpt_link) { %>
+      <% if (index){ %>
+        <% if (post.summary && post.summary.length > 0) { %>
+          <%- post.summary %>
+        <% } else if (post.excerpt && post.excerpt.length > 0) { %>
+          <%- strip_html(post.excerpt).substring(0, 120) %>
+          <br>
+          <a class="article-more-a" href="<%- url_for(post.path) %>#more"><%= theme.excerpt_link %> >></a>
+        <% } else if (post.content && post.content.length > 0) { %>
+          <%- strip_html(post.content).substring(0, 120) %>
+          <br>
           <a class="article-more-a" href="<%- url_for(post.path) %>#more"><%= theme.excerpt_link %> >></a>
         <% } %>
       <% } else { %>
-        <%- strip_html(post.content).substring(0, 120) %>
-        <br>
-        <a class="article-more-a" href="<%- url_for(post.path) %>"><%= theme.excerpt_link %> >></a>
+        <%- post.content %>
       <% } %>
 
 <% if ((theme.essayending_type === 2 || (theme.essayending_type === 1 && post.essayending)) && !index){ %>
