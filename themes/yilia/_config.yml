@@ -121,7 +121,7 @@ smart_menu:
 
 friends:
   图床: https://dabao1955.github.io/image 
-  留言板: https://6-liart.vercel.app/
+  留言板: https://6-jkzfccfvq-dpkg123.vercel.app/
   原来的博客: https://dabao1955.github.io
   Adminzhangの个人博客: https://www.a9-9.top/
   cyp0633的blog: https://cyp0633.icu
@@ -178,11 +178,6 @@ snow:
   enable: true
 
 
-auto_excerpt:
-  enable: true
-  length: 25
-
-
 # 是否开启字数统计
 #不需要使用，直接设置值为false，或注释掉
 word_count: true
@@ -202,3 +197,7 @@ inject:
 
 waline:
     serverURL: 'https://6-liart.vercel.app/'
+
+auto_excerpt:
+  enable: true
+  length: 25
