@@ -120,26 +120,30 @@ smart_menu:
   aboutme: '关于我'
 
 friends:
-  图床: https://dabao1955.github.io/image 
+  图床: https://dabao1955.github.io/image/
   留言板: https://6-jkzfccfvq-dpkg123.vercel.app/
-  原来的博客: https://dabao1955.github.io
+  原来的博客: https://dabao1955.github.io/
   Adminzhangの个人博客: https://www.a9-9.top/
-  cyp0633的blog: https://cyp0633.icu
-  小码同学: https://blog.hikki.site
+  cyp0633的blog: https://cyp0633.icu/
+  小码同学: https://blog.hikki.site&
   U.M.R-Powered-Blog: https://umrpowered.codeberg.page/
   醉浪的个人博客: https://blog.zuilang.tk/
   云遇未晚: https://blog.tryrun.top/
-  ialtone的小站: https://ialtone.xyz
-  Tianli: https://tianli-blog.club
+  ialtone的小站: https://ialtone.xyz/
+  Tianli: https://tianli-blog.club/
   PiCpo的阁楼: https://picpo.top/
   artiga033: https://blog.artiga.top/
   柏园猫のBlog: https://nekomoe.xyz/
   欠陥電気の摸鱼小池: https://blog.atri.tk/
-  洛仙璃の幻梦: https://mzwing.eu.org
+  洛仙璃の幻梦: https://mzwing.eu.org/
   木屐落在水洼了: https://mjt.asia/
-  湛蓝的调色板: https://nekoq.eu.org
+  湛蓝的调色板: https://nekoq.eu.org/
   SakuraKooi的Blog: https://blog.sakurakooi.cyou/
   新世界的大门: https://blog.xinshijiededa.men/
+  沨鸾的小窝: https://nekohm.moe/
+  Revincx: https://blog.revincx.icu/
+  mccsjs: https://mccsjs.weie.top/
+  KusakabeShi的Space: https://www.kskb.eu.org/
 
   
 aboutme: 透明小菜鸡一枚<br><br>目前正在学习C语言<br>正在移植postmarketOS到k20pro/k30pro上<br>本博客使用github-page作为网页托管平台，netlify提供cdn加速服务。<br>不知道为啥yilia主题改不了下面的文字
@@ -200,3 +204,9 @@ waline:
 auto_excerpt:
   enable: true
   length: 25
+
+# 网站运行时间，格式形如：“本站已安全运行 101 天 12 小时 13 分 41 秒”
+# Runing Time
+running_time:
+ enable: true
+ create_time: '04/21/2023 12:00:00' #此处修改你的建站时间或者网站上线时间
