@@ -3,7 +3,7 @@ title: repos
 date: 2023-04-10 14:16:38
 ---
 # 软件源地址
- [地址](https://dpkg123.github.io/repos/debian)
+ [地址](./debian)
 
 # 软件列表
 | name                         | version     | architecture |
@@ -11,7 +11,7 @@ date: 2023-04-10 14:16:38
 | box64                        | 0.2.3       | arm64        |
 | box86                        | 0.3.1       | armhf        |
 | lx-music-desktop             | 1.22.3      | amd64,arm64  |
-| sougoupinyin                 | 4.0.1.2800  | amd64,arm64  |
+| sougoupinyin                 | 4.2.5       | amd64,arm64  |
 | netease-cloud-music          | 1.2.1       | amd64        |
 | yesplaymusic                 | 0.4.5       | amd64,arm64  |
 | fantascene-dynamic-wallpaper | 1.4.2       | amd64,arm64  |
@@ -26,8 +26,12 @@ date: 2023-04-10 14:16:38
 | appeditor                    | 1.1.1       | amd64,arm64  |
 | ciano                        | 0.2.40      | amd64,arm64  |
 | linuxqq                      | 2.0.0-b2    | amd64,arm64  |
-
+| bbg                          | 20230706    | amd64,arm64  |
+| qqmusic                      | 1.1.5       | amd64        |
+| baidunetdisk                 | 4.17.7      | amd64        |
 # To do 
 - [x] 迁移软件仓库
 
 - [ ] 更新更多的软件
+
+注:搜狗输入法包含loongarch64架构
