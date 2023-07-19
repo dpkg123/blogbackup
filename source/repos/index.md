@@ -29,6 +29,8 @@ date: 2023-04-10 14:16:38
 | bbg                          | 20230706    | amd64,arm64  |
 | qqmusic                      | 1.1.5       | amd64        |
 | baidunetdisk                 | 4.17.7      | amd64        |
+| spark-store                  | 4.2.6       | amd64,arm64  |
+| spark-store-console          | 4.2.6       | all          |
 # To do 
 - [x] 迁移软件仓库
 
