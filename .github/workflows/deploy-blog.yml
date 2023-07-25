@@ -16,10 +16,16 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Setup environment
+      
+        uses: actions/setup-node@v3
 
+        with:
+
+         node-version: 18
+      
+      - name: Install Hexo
         run: |
-          sudo apt update
-          sudo apt install -y git npm nodejs tar zip unzip xz-utils
+      
           npm i -g hexo hexo-cli
       - name: Pull blog source
 
