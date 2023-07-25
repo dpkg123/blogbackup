@@ -8,11 +8,15 @@ on:
    pull_request:
 
     branches: ["main"]
+    
+    types: [opened, synchronize]
 
 
 jobs:
 
   deploy-blog:
+    
+    if: ${{ github.event.review.state == 'approved' }}
 
     runs-on: ubuntu-latest
 
