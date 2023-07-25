@@ -7,7 +7,7 @@ on:
     
    pull_request:
 
-    branches: ["main"]
+    branches: main
     
     types: [opened, synchronize]
 
@@ -15,8 +15,6 @@ on:
 jobs:
 
   deploy-blog:
-    
-    if: ${{ github.event.review.state == 'approved' }}
 
     runs-on: ubuntu-latest
 
