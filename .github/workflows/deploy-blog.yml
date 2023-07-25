@@ -1,11 +1,11 @@
-name: deploy blog
+name: deploy blog (pr)
 
 on:
    push:
 
     branches: main
     
-   pull_request_target:
+   pull_request:
 
     branches: main
     
@@ -21,6 +21,56 @@ jobs:
   deploy-blog:
 
     runs-on: ubuntu-latest
+    
+    if: ${{ github.event.pull_request.head.ref == 'main' }}
+
+    steps:
+
+      - uses: actions/checkout@v3
+
+      - name: Setup environment
+
+        run: |
+          sudo apt update
+          sudo apt install -y git npm nodejs tar zip unzip xz-utils
+          npm i -g hexo hexo-cli
+      - name: Pull blog source
+
+        run: |
+          git clone https://github.com/dpkg123/blogbackup
+      - name: Build blog
+        run: |
+          cd blogbackup
+          sudo rm -rf .git*
+          hexo cl && hexo g
+      - name: Upload blog to artifact
+
+        uses: actions/upload-artifact@v3
+
+        with:
+
+          name: blog-html
+
+          path: blogbackup/public/*es: main
+    
+   pull_request:
+
+    branches: main
+    
+    types: [opened, synchronize, edited, reopened]
+    
+    paths:
+
+      - '/**'
+
+
+jobs:
+
+  deploy-blog:
+
+    runs-on: ubuntu-latest
+    
+    if: ${{ github.event.pull_request.head.ref == 'main' }}
 
     steps:
 
