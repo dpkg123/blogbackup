@@ -1,19 +1,11 @@
 name: deploy blog 
 on:
    push:
-
-    branches: main
     
    pull_request:
-
-    branches: main
     
     types: [opened, synchronize, edited, reopened]
     
-    paths:
-
-      - '/**'
-
 
 jobs:
 
