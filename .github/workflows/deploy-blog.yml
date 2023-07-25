@@ -9,7 +9,7 @@ on:
 
     branches: main
     
-    types: [opened, synchronize]
+    types: [opened, synchronize, edited, reopened]
     
     paths:
 
