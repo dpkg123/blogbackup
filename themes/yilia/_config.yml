@@ -8,7 +8,7 @@ menu:
 subnav:
   github: "https://github.com/dabao1955"
   #weibo: "#"
-  rss: "https://dpkg123.github.io/atom.xml"
+  rss: "https://dpkg123.netlify.app/atom.xml"
   #zhihu: "#"
   #qq: "195328750"
   #weixin: "#"
@@ -68,7 +68,7 @@ google_analytics: ''
 favicon: /img/logo.jpg
 
 #你的头像url
-avatar: https://dpkg123.github.io/img/author/author.jpg
+avatar: https://dpkg123.netlify.app/img/author/author.jpg
 
 #是否开启分享
 share_jia: true
@@ -120,9 +120,11 @@ smart_menu:
   aboutme: '关于我'
 
 friends:
+  note现在暂不考虑申请新的友链: about:blank
   图床: https://dabao1955.github.io/image/
   留言板: https://6-jkzfccfvq-dpkg123.vercel.app/
   原来的博客: https://dabao1955.github.io/
+  自建第三方deb软件源: https://other-repos.dpkg123.site/
   Adminzhangの个人博客: https://www.a9-9.top/
   cyp0633的blog: https://cyp0633.icu/
   小码同学: https://blog.hikki.site
@@ -130,7 +132,6 @@ friends:
   醉浪的个人博客: https://blog.zuilang.tk/
   云遇未晚: https://blog.tryrun.top/
   ialtone的小站: https://ialtone.xyz/
-  Tianli: https://tianli-blog.club/
   PiCpo的阁楼: https://picpo.top/
   artiga033: https://blog.artiga.top/
   柏园猫のBlog: https://nekomoe.xyz/
@@ -140,11 +141,16 @@ friends:
   湛蓝的调色板: https://nekoq.eu.org/
   SakuraKooi的Blog: https://blog.sakurakooi.cyou/
   新世界的大门: https://blog.xinshijiededa.men/
-  沨鸾的小窝: https://nekohm.moe/
+  沨鸾的小窝: https://crack.moe/
   Revincx: https://blog.revincx.icu/
   JIPA233の小窝: https://jipa.uk/
   米拉の小窝: https://mirastar.top/
   胡桃木实验室: https://www.htmacg.cn/
+  Tianli-blog: https://tianli-blog.club/
+  Mufanc: https://blog.mufanc.xyz/
+  Fika: https://fika.ink/
+  Pinpe的物语: https://pinpe.top/
+  冷域之地: https://blog.coldregion.top/
 
 
 aboutme: 透明小菜鸡一枚<br><br>目前正在学习C语言<br>正在移植postmarketOS到k20pro/k30pro上<br>本博客使用github-page作为网页托管平台，netlify提供cdn加速服务。<br>不知道为啥yilia主题改不了下面的文字
@@ -207,11 +213,12 @@ auto_excerpt:
   length: 25
 
 # 网站运行时间，格式形如：“本站已安全运行 101 天 12 小时 13 分 41 秒”
+# Runing Time
 time: #此处修改你的建站时间或者网站上线时间
   enable: true
   year: 2023 # 年份
   month: 04 # 月份
-  date: 21 # 日期
-  hour: 12 # 小时
-  minute: 00 # 分钟
-  second: 00 # 秒
+  date: 10 # 日期
+  hour: 09 # 小时
+  minute: 01 # 分钟
+  second: 23 # 秒
