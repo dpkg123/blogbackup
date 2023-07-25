@@ -24,6 +24,7 @@ jobs:
          node-version: 18
       
       - name: Install Hexo
+        run: |
       
           npm i -g hexo hexo-cli
       - name: Pull blog source
