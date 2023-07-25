@@ -207,7 +207,11 @@ auto_excerpt:
   length: 25
 
 # 网站运行时间，格式形如：“本站已安全运行 101 天 12 小时 13 分 41 秒”
-# Runing Time
-running_time:
- enable: true
- create_time: '04/21/2023 12:00:00' #此处修改你的建站时间或者网站上线时间
+time: #此处修改你的建站时间或者网站上线时间
+  enable: true
+  year: 2023 # 年份
+  month: 04 # 月份
+  date: 21 # 日期
+  hour: 12 # 小时
+  minute: 00 # 分钟
+  second: 00 # 秒
