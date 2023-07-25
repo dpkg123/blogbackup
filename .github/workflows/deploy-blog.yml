@@ -1,5 +1,4 @@
-name: deploy blog (pr)
-
+name: deploy blog 
 on:
    push:
 
@@ -22,8 +21,6 @@ jobs:
 
     runs-on: ubuntu-latest
     
-    if: ${{ github.event.pull_request.base.ref == 'main' }}
-
     steps:
 
       - uses: actions/checkout@v2
