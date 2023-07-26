@@ -1,4 +1,4 @@
-name: deploy blog 
+name: deploy blog for test branch
 on:
    push:
     branches: test
@@ -28,7 +28,7 @@ jobs:
       - name: Pull blog source
 
         run: |
-          git clone https://github.com/dpkg123/blogbackup
+          git clone https://github.com/dpkg123/blogbackup -b test
       - name: Build blog
         run: |
           cd blogbackup
