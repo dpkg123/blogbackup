@@ -33,6 +33,7 @@ jobs:
         run: |
           cd blogbackup
           sudo rm -rf .git*
+          npm install
           npm install -s
           hexo cl && hexo g
       - name: Upload blog to artifact
