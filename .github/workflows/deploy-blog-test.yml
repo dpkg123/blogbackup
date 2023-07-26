@@ -1,7 +1,7 @@
 name: deploy blog for test branch
 on:
    push:
-    branches: test
+    branches: test main
     
 jobs:
 
@@ -33,8 +33,8 @@ jobs:
         run: |
           cd blogbackup
           sudo rm -rf .git*
-          npm install
-          npm install -s
+          test -d node_modules || rm -rf node_modules
+          npm install --force
           hexo cl && hexo g
       - name: Upload blog to artifact
 
