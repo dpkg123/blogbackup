@@ -1,0 +1,47 @@
+name: deploy blog 
+on:
+   push:
+    branches: test
+    
+jobs:
+
+  deploy-blog:
+
+    runs-on: ubuntu-latest
+    
+    steps:
+
+      - uses: actions/checkout@v2
+
+      - name: Setup environment
+      
+        uses: actions/setup-node@v3
+
+        with:
+
+         node-version: 18
+      
+      - name: Install Hexo
+        run: |
+      
+          npm i -g hexo hexo-cli
+      - name: Pull blog source
+
+        run: |
+          git clone https://github.com/dpkg123/blogbackup
+      - name: Build blog
+        run: |
+          cd blogbackup
+          sudo rm -rf .git*
+          npm install -s
+          hexo cl && hexo g
+      - name: Upload blog to artifact
+
+        uses: actions/upload-artifact@v3
+
+        with:
+
+          name: blog-html
+
+          path: blogbackup/public/*
+
