@@ -1,0 +1,42 @@
+<%- partial('_partial/head') %>
+<!-- 雪花特效2 -->
+<% if (theme.snow){ %>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="/snow.js"></script>
+<% } %>
+<!-- 《页面点击小红心 -->
+<% if (theme.love){ %>
+    <script type="text/javascript" src="/love.js"></script>
+<% } %>
+<!-- 页面点击小红心》 -->
+<body>
+<link rel="stylesheet" href="/./dist/APlayer.min.css">
+<div id="aplayer" style="z-index: 99999;"></div>
+<script src="/./dist/hls.min.js"></script>
+<script src="/./dist/APlayer.min.js"></script>
+<script src="/./dist/musicPlay.js"></script>
+  <div id="container" q-class="show:isCtnShow">
+    <canvas id="anm-canvas" class="anm-canvas"></canvas>
+    <div class="left-col" q-class="show:isShow">
+      <%- partial('_partial/left-col', null, {cache: !config.relative_link}) %>
+    </div>
+    <div class="mid-col" q-class="show:isShow,hide:isShow|isFalse">
+      <%- partial('_partial/mobile-nav', null, {cache: !config.relative_link}) %>
+      <div id="wrapper" class="body-wrap">
+        <div class="menu-l">
+          <div class="canvas-wrap">
+            <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
+          </div>
+          <div id="js-content" class="content-ll">
+            <%- body %>
+          </div>
+        </div>
+      </div>
+      <%- partial('_partial/footer') %>
+    </div>
+    <%- partial('_partial/after-footer') %>
+    <%- partial('_partial/tools') %>
+    <%- partial('_partial/viewer') %>
+  </div>
+</body>
+</html>
