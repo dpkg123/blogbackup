@@ -37,13 +37,3 @@ jobs:
           sudo rm -rf .git*
           npm install --force --save
           hexo cl && hexo g
-      - name: Upload blog to artifact
-
-        uses: actions/upload-artifact@v3
-
-        with:
-
-          name: blog-html
-
-          path: blogbackup/public/*
-
