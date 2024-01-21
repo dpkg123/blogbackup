@@ -8,7 +8,7 @@ menu:
 subnav:
   github: "https://github.com/dabao1955"
   #weibo: "#"
-  rss: "https://dpkg123.github.io/atom.xml"
+  rss: "https://dpkg123.netlify.app/atom.xml"
   #zhihu: "#"
   #qq: "195328750"
   #weixin: "#"
@@ -39,7 +39,7 @@ show_all_link: '展开全文'
 # 数学公式
 mathjax: false
 # 是否在新窗口打开链接
-open_in_new: false
+open_in_new: true
 
 # 打赏
 # 打赏type设定：0-关闭打赏； 1-文章对应的md文件里有reward:true属性，才有打赏； 2-所有文章均有打赏
@@ -68,7 +68,7 @@ google_analytics: ''
 favicon: /img/logo.jpg
 
 #你的头像url
-avatar: https://dpkg123.github.io/img/author/author.jpg
+avatar: /favicon.jpg
 
 #是否开启分享
 share_jia: true
@@ -120,17 +120,18 @@ smart_menu:
   aboutme: '关于我'
 
 friends:
+  note现在暂不考虑申请新的友链: about:blank
   图床: https://dabao1955.github.io/image/
   留言板: https://6-jkzfccfvq-dpkg123.vercel.app/
   原来的博客: https://dabao1955.github.io/
+  自建第三方deb软件源: https://other-repos.dpkg123.site/
   Adminzhangの个人博客: https://www.a9-9.top/
   cyp0633的blog: https://cyp0633.icu/
   小码同学: https://blog.hikki.site
   U.M.R-Powered-Blog: https://umrpowered.codeberg.page/
-  醉浪的个人博客: https://blog.zuilang.tk/
+  秋澪Akimio: https://blog.akimio.top/
   云遇未晚: https://blog.tryrun.top/
   ialtone的小站: https://ialtone.xyz/
-  Tianli: https://tianli-blog.club/
   PiCpo的阁楼: https://picpo.top/
   artiga033: https://blog.artiga.top/
   柏园猫のBlog: https://nekomoe.xyz/
@@ -140,12 +141,16 @@ friends:
   湛蓝的调色板: https://nekoq.eu.org/
   SakuraKooi的Blog: https://blog.sakurakooi.cyou/
   新世界的大门: https://blog.xinshijiededa.men/
-  沨鸾的小窝: https://nekohm.moe/
+  沨鸾的小窝: https://blog.crack.moe/
   Revincx: https://blog.revincx.icu/
-  JIPA233の小窝: https://jipa.uk/
+  JIPA233の小窝: https://jipa.moe/
   米拉の小窝: https://mirastar.top/
   胡桃木实验室: https://www.htmacg.cn/
-
+  Mufanc: https://blog.mufanc.xyz/
+  Fika: https://fika.ink/
+  Pinpe的物语: https://pinpe.top/
+  残夜的小博客: https://blog.canyie.top/
+  冷域之地: https://blog.coldregion.top/
 
 aboutme: 透明小菜鸡一枚<br><br>目前正在学习C语言<br>正在移植postmarketOS到k20pro/k30pro上<br>本博客使用github-page作为网页托管平台，netlify提供cdn加速服务。<br>不知道为啥yilia主题改不了下面的文字
 
@@ -164,13 +169,13 @@ essayending_type: 2 #0关闭文章结束提示 2全开 1需要在文章开头加
 essayending: true
 
 music:
-  enable: true
+  enable: false
   id: 1476239407   # 网易云分享的ID
   autoplay: false  # 是否开启自动播放
 
 # 侧栏时钟
 clock:
-  enable: true
+  enable: false
 
 # 鼠标特效
 mouse:
@@ -178,13 +183,13 @@ mouse:
   
 # 雪花特效 
 # 开启后有些卡
-snow:
-  enable: true
+#snow:
+#  enable: false
 
 
 # 是否开启字数统计
 #不需要使用，直接设置值为false，或注释掉
-word_count: true
+#word_count: true
 
 
 # Footer Settings
@@ -207,11 +212,12 @@ auto_excerpt:
   length: 25
 
 # 网站运行时间，格式形如：“本站已安全运行 101 天 12 小时 13 分 41 秒”
+# Runing Time
 time: #此处修改你的建站时间或者网站上线时间
   enable: true
   year: 2023 # 年份
   month: 04 # 月份
-  date: 21 # 日期
-  hour: 12 # 小时
-  minute: 00 # 分钟
-  second: 00 # 秒
+  date: 10 # 日期
+  hour: 09 # 小时
+  minute: 01 # 分钟
+  second: 23 # 秒
