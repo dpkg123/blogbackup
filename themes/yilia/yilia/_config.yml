@@ -1,0 +1,223 @@
+# Header
+
+menu:
+  主页: /
+  归档: /archives/
+  软件: /repos/
+# SubNav
+subnav:
+  github: "https://github.com/dabao1955"
+  #weibo: "#"
+  rss: "https://dpkg123.netlify.app/atom.xml"
+  #zhihu: "#"
+  #qq: "195328750"
+  #weixin: "#"
+  #jianshu: "#"
+  #douban: "#"
+  #segmentfault: "#"
+  bilibili: "https://space.bilibili.com/400629023"
+  #acfun: "#"
+  mail: "mailto:dabao1955@163.com"
+  #facebook: "#"
+  #google: "#"
+  #twitter: "#"
+  #linkedin: "#"
+
+rss: /atom.xml
+
+# 是否需要修改 root 路径
+# 如果您的网站存放在子目录中，例如 http://yoursite.com/blog，
+# 请将您的 url 设为 http://yoursite.com/blog 并把 root 设为 /blog/。
+root: /
+
+# Content
+
+# 文章太长，截断按钮文字
+excerpt_link: more
+# 文章卡片右下角常驻链接，不需要请设置为false
+show_all_link: '展开全文'
+# 数学公式
+mathjax: false
+# 是否在新窗口打开链接
+open_in_new: true
+
+# 打赏
+# 打赏type设定：0-关闭打赏； 1-文章对应的md文件里有reward:true属性，才有打赏； 2-所有文章均有打赏
+reward_type: 0
+# 打赏wording
+reward_wording: '谢谢你请我吃糖果'
+# 支付宝二维码图片地址，跟你设置头像的方式一样。比如：/assets/img/alipay.jpg
+alipay: 
+# 微信二维码图片地址
+weixin: 
+
+# 目录
+# 目录设定：0-不显示目录； 1-文章对应的md文件里有toc:true属性，才有目录； 2-所有文章均显示目录
+toc: 2
+# 根据自己的习惯来设置，如果你的目录标题习惯有标号，置为true即可隐藏hexo重复的序号；否则置为false
+toc_hide_index: true
+# 目录为空时的提示
+toc_empty_wording: 'No Such File Or Directory'
+
+# 是否有快速回到顶部的按钮
+top: true
+
+# Miscellaneous
+baidu_analytics: ''
+google_analytics: ''
+favicon: /img/logo.jpg
+
+#你的头像url
+avatar: /favicon.jpg
+
+#是否开启分享
+share_jia: true
+
+#评论：1、多说；2、网易云跟帖；3、畅言；4、Disqus；5、Gitment
+#不需要使用某项，直接设置值为false，或注释掉
+#具体请参考wiki：https://github.com/litten/hexo-theme-yilia/wiki/
+
+#1、多说
+duoshuo: false
+
+#2、网易云跟帖
+wangyiyun: false
+
+#3、畅言
+changyan_appid: false
+changyan_conf: false
+
+#4、Disqus 在hexo根目录的config里也有disqus_shortname字段，优先使用yilia的
+disqus: false
+
+#5、Gitment
+#gitment_owner: dpkg123      #你的 GitHub ID
+#gitment_repo: 'dpkg123.github.io'          #存储评论的 repo
+#gitment_oauth:
+#  client_id: '0fcdcb0b87b884d8a05f'           #client ID
+#  client_secret: '6fb4473c2cdd9a45282ff0faa3cf0a0a1795d605'       #client secret
+
+# 样式定制 - 一般不需要修改，除非有很强的定制欲望…
+style:
+  # 头像上面的背景颜色
+  header: '#4d4d4d'
+  # 右滑板块背景
+  slider: 'linear-gradient(200deg,#a0cfe4,#e8c37e)'
+
+# slider的设置
+slider:
+  # 是否默认展开tags板块
+  showTags: true
+
+# 智能菜单
+# 如不需要，将该对应项置为false
+# 比如
+#smart_menu:
+#  friends: false
+smart_menu:
+  innerArchive: '所有文章'
+  friends: '友情链接'
+  aboutme: '关于我'
+
+friends:
+  note现在暂不考虑申请新的友链: about:blank
+  图床: https://dabao1955.github.io/image/
+  留言板: https://6-jkzfccfvq-dpkg123.vercel.app/
+  原来的博客: https://dabao1955.github.io/
+  自建第三方deb软件源: https://other-repos.dpkg123.site/
+  Adminzhangの个人博客: https://www.a9-9.top/
+  cyp0633的blog: https://cyp0633.icu/
+  小码同学: https://blog.hikki.site
+  U.M.R-Powered-Blog: https://umrpowered.codeberg.page/
+  秋澪Akimio: https://blog.akimio.top/
+  云遇未晚: https://blog.tryrun.top/
+  ialtone的小站: https://ialtone.xyz/
+  PiCpo的阁楼: https://picpo.top/
+  artiga033: https://blog.artiga.top/
+  柏园猫のBlog: https://nekomoe.xyz/
+  欠陥電気の摸鱼小池: https://blog.atri.tk/
+  洛仙璃の幻梦: https://mzwing.eu.org/
+  木屐落在水洼了: https://mjt.asia/
+  湛蓝的调色板: https://nekoq.eu.org/
+  SakuraKooi的Blog: https://blog.sakurakooi.cyou/
+  新世界的大门: https://blog.xinshijiededa.men/
+  沨鸾的小窝: https://blog.crack.moe/
+  Revincx: https://blog.revincx.icu/
+  JIPA233の小窝: https://jipa.moe/
+  米拉の小窝: https://mirastar.top/
+  胡桃木实验室: https://www.htmacg.cn/
+  Mufanc: https://blog.mufanc.xyz/
+  Fika: https://fika.ink/
+  Pinpe的物语: https://pinpe.top/
+  残夜的小博客: https://blog.canyie.top/
+  冷域之地: https://blog.coldregion.top/
+
+aboutme: 透明小菜鸡一枚<br><br>目前正在学习C语言<br>正在移植postmarketOS到k20pro/k30pro上<br>本博客使用github-page作为网页托管平台，netlify提供cdn加速服务。<br>不知道为啥yilia主题改不了下面的文字
+
+#版权基础设定：0-关闭声明； 1-文章对应的md文件里有declare: true属性，才有版权声明； 2-所有文章均有版权声明
+#当前应用的版权协议地址。
+#版权协议的名称
+#版权协议的Logo
+
+declare_type: 2
+licensee_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+licensee_name: '知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议'
+licensee_img: https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png
+
+#文章结束
+essayending_type: 2 #0关闭文章结束提示 2全开 1需要在文章开头加上 
+essayending: true
+
+music:
+  enable: false
+  id: 1476239407   # 网易云分享的ID
+  autoplay: false  # 是否开启自动播放
+
+# 侧栏时钟
+clock:
+  enable: false
+
+# 鼠标特效
+mouse:
+  love: true
+  
+# 雪花特效 
+# 开启后有些卡
+#snow:
+#  enable: false
+
+
+# 是否开启字数统计
+#不需要使用，直接设置值为false，或注释掉
+#word_count: true
+
+
+# Footer Settings
+# --------------------------------------
+footer:
+  owner:
+    enable: true
+    since: 2022
+
+inject:
+  head:
+  bottom:
+    - <div class="aplayer no-destroy" data-id="60198" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="true"> </div>
+
+waline:
+    serverURL: 'https://6-liart.vercel.app/'
+
+auto_excerpt:
+  enable: true
+  length: 25
+
+# 网站运行时间，格式形如：“本站已安全运行 101 天 12 小时 13 分 41 秒”
+# Runing Time
+time: #此处修改你的建站时间或者网站上线时间
+  enable: true
+  year: 2023 # 年份
+  month: 04 # 月份
+  date: 10 # 日期
+  hour: 09 # 小时
+  minute: 01 # 分钟
+  second: 23 # 秒
