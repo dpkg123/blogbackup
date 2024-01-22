@@ -29,7 +29,5 @@ jobs:
           npm i -g hexo hexo-cli
       - name: Build blog
         run: |
-          cd blogbackup
-          sudo rm -rf .git*
           npm install --force --save
           hexo cl && hexo g
