@@ -35,19 +35,9 @@ jobs:
       
 
           npm i -g hexo hexo-cli
-
-      - name: Pull blog source
-
-        run: |
-
-          git clone https://github.com/dpkg123/blogbackup
-
       - name: Build blog
 
         run: |
-
-          cd blogbackup
-
           sudo rm -rf .git*
 
           npm install --force --save
@@ -62,4 +52,4 @@ jobs:
 
           name: blog-html
 
-          path: blogbackup/public/*
+          path: public/*
