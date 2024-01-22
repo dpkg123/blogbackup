@@ -27,10 +27,6 @@ jobs:
         run: |
       
           npm i -g hexo hexo-cli
-      - name: Pull blog source
-
-        run: |
-          git clone https://github.com/dpkg123/blogbackup
       - name: Build blog
         run: |
           cd blogbackup
