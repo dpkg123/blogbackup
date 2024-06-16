@@ -18,9 +18,6 @@ jobs:
         - owner: Voxelum
           repo:  x-minecraft-launcher
           arch: arm64
-        - owner: chrismaltby
-          repo:  gb-studio
-          arch: amd64
         - owner: qier222
           repo:  YesPlayMusic
           arch: amd64
@@ -41,4 +38,13 @@ jobs:
           OWNER: ${{ matrix.owner }}
           REPO: ${{ matrix.repo }}
 
-        
+  gb:
+    strategy:
+      fail-fast: false
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install Build Tools
+        run: sudo apt update && sudo apt install jq reprepro -y
+      - name: Checkout
+        uses: actions/checkout@v4
+    
