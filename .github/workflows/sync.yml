@@ -41,7 +41,7 @@ jobs:
         run: |
           cd debian
           sed -i 's/SignWith: C98C969E/#SignWith: C98C969E/g' conf/distributions
-          reprepro includedeb stable *.deb
+          reprepro includedeb stable ../*.deb
 
   gb:
     strategy:
@@ -60,4 +60,4 @@ jobs:
         run: |
           cd debian
           sed -i 's/SignWith: C98C969E/#SignWith: C98C969E/g' conf/distributions
-          reprepro includedeb stable *.deb
+          reprepro includedeb stable ../*.deb
