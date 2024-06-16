@@ -5,7 +5,11 @@ set -x
 RELEASE=$(curl -s -H "Authorization: token $TOKEN" https://api.github.com/repos/"$OWNER"/"$REPO"/releases/latest)
 
 # 使用 jq 解析 JSON，获取 ARM64 的 deb 文件下载链接
-ASSET=$(echo $RELEASE | jq -r '.assets[] | select(.name | endswith("$ARCH.deb"))')
+if [ ARCH = arm64 ]; then
+    ASSET=$(echo $RELEASE | jq -r '.assets[] | select(.name | endswith("arm64.deb"))')
+elif [ ARCH = amd64 ]; then
+    ASSET=$(echo $RELEASE | jq -r '.assets[] | select(.name | endswith("amd64.deb"))')
+fi
 
 if [ "$ASSET" == "" ]; then
     echo "No $ARCH.deb asset found in the latest release."
