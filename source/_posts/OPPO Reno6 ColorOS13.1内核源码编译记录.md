@@ -2,8 +2,8 @@
 title: OPPO Reno6 ColorOS13.1内核源码编译记录
 date: 2024-01-15 15:03:25
 tags:
- - Android
- - Kernel
+ - android
+ - kernel
  - OPPO
 ---
 前几天看到[ OPPO 的 mt6877 源码](https://github.com/oppo-source/android_kernel_oppo_mt6877/)放出了[ Reno6 ColorOS13.1 分支](https://github.com/oppo-source/android_kernel_oppo_mt6877/tree/oppo/mt6877_t_13.1.0_reno6_5g)。遂拉下来编译。

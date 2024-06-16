@@ -17,7 +17,7 @@ date: 2023-04-10 14:16:38
 | fantascene-dynamic-wallpaper | 1.4.2       | amd64,arm64  |
 | pi-apps                      | 1.0.2       | arm64        |
 | qemu-launcher                | 0.0.1       | all          |
-| typora                       | 1.5.10      | amd64,arm64  |
+| typora                       | 1.6.6       | amd64,arm64  |
 | tmoe-linux-tool              | 1.4989.50.2 | all          |
 | reciteword                   | 0.8.7       | amd64        |
 | tenvideo                     | 1.0.10      | amd64        |
@@ -26,11 +26,11 @@ date: 2023-04-10 14:16:38
 | appeditor                    | 1.1.1       | amd64,arm64  |
 | ciano                        | 0.2.40      | amd64,arm64  |
 | linuxqq                      | 2.0.0-b2    | amd64,arm64  |
-| bbg                          | 20230706    | amd64,arm64  |
 | qqmusic                      | 1.1.5       | amd64        |
 | baidunetdisk                 | 4.17.7      | amd64        |
 | spark-store                  | 4.2.6       | amd64,arm64  |
 | spark-store-console          | 4.2.6       | all          |
+| x-minecraft-launcher         | 0.37.6      | amd64,arm64  |
 # To do 
 - [x] 迁移软件仓库
 
