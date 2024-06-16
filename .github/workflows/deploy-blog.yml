@@ -7,31 +7,6 @@ on:
     
 jobs:
 
-  deploy-blog:
-
-    runs-on: ubuntu-latest
-    
-    steps:
-
-      - uses: actions/checkout@v4
-
-      - name: Setup environment
-      
-        uses: actions/setup-node@v4
-
-        with:
-
-         node-version: 18
-      
-      - name: Install Hexo
-        run: |
-      
-          npm i -g hexo hexo-cli
-      - name: Build blog
-        run: |
-          npm install --force --save
-          hexo cl && hexo g
-          
   deploy-blog_use-yarn:
 
     runs-on: ubuntu-latest
