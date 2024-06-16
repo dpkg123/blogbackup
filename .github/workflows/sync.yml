@@ -37,6 +37,11 @@ jobs:
           ARCH: ${{ matrix.arch }}
           OWNER: ${{ matrix.owner }}
           REPO: ${{ matrix.repo }}
+      - name: add package
+        run: |
+          cd debian
+          sed -i 's/SignWith: C98C969E/#SignWith: C98C969E/g' conf/distributions
+          reprepro includedeb stable *.deb
 
   gb:
     strategy:
@@ -47,4 +52,12 @@ jobs:
         run: sudo apt update && sudo apt install jq reprepro -y
       - name: Checkout
         uses: actions/checkout@v4
-    
+      - name: sync
+        run: bash debian/sync-gb-studio.sh
+        env:
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: add package
+        run: |
+          cd debian
+          sed -i 's/SignWith: C98C969E/#SignWith: C98C969E/g' conf/distributions
+          reprepro includedeb stable *.deb
