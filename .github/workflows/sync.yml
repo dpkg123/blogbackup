@@ -84,14 +84,14 @@ jobs:
       - name: commit updates
         run: |
           git config user.name "renovate[bot] "
-          git pull origin deb-stage2
+          git pull 
           git config user.email "29139614+renovate[bot]@users.noreply.github.com"
-          git pull origin deb-stage2
+          git pull 
           git config --global --add safe.directory /github/workspace
-          git pull origin deb-stage2
+          git pull 
           git add .
           git commit -m "Bump packages"
-          git pull origin deb-stage2
+          git pull 
       - name: GitHub Push
         continue-on-error: true
         uses: ad-m/github-push-action@master
