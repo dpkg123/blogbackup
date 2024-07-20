@@ -22,6 +22,7 @@ jobs:
         with:
 
          node-version: 18
+         cache: yarn
       
       - name: Install Hexo
         run: |
