@@ -7,3 +7,4 @@ public/
 _multiconfig.yml
 .deploy_git/
 node_modules
+debian/

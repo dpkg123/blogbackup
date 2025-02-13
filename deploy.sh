@@ -13,7 +13,7 @@ yarn cache clean -f
 
 hexo cl
 hexo g
-cp ~/debian ~/test/public/repos -rv
+cp ~/debian ./public/repos/ -rv
 git clone https://github.com/NekoSekaiMoe/hen_webpage public/hen --depth=1
 git clone https://github.com/NekoSekaiMoe/henkaku_webpage public/henkaku --depth=1
 mkdir -p -v public/gh-down
@@ -28,6 +28,7 @@ cp public/henkaku/payload.js public/
 #rm -rf -v public/ubc26/.git*
 rm -rf -v piblic/jslinux/.git*
 rm -rf -v public/shelljs/.git*
+rm -rf -v public/shelljs/test*
 rm -rf -v public/hen/ps4/.git*
 rm -rf -v public/hen/.git*
 rm -rf -v public/henkaku/.git*
@@ -36,3 +37,4 @@ hexo d
 hexo cl
 
 rm -rf *.bak
+bash upload.sh
