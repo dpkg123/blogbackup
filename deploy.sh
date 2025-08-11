@@ -4,6 +4,7 @@ set -eux
 export HME=$(pwd)
 cd $HME
 
+bash upload.sh
 git pull --rebase
 yarn install
 yarn cache clean -f
@@ -34,4 +35,3 @@ hexo d
 hexo cl
 
 rm -rf *.bak
-bash upload.sh
