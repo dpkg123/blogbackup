@@ -4,10 +4,7 @@ set -eux
 export HME=$(pwd)
 cd $HME
 
-test -f yarn.lock && mv yarn.lock yarn.lock.bak
-wget https://github.com/dpkg123/blogbackup/raw/main/yarn.lock
-test -f package.json && mv package.json pwckage.json.bak
-wget https://github.com/dpkg123/blogbackup/raw/main/package.json
+git pull --rebase
 yarn install
 yarn cache clean -f
 
