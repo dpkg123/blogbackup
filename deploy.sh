@@ -11,7 +11,7 @@ yarn cache clean -f
 
 hexo cl
 hexo g
-cp ~/debian ./public/repos/ -rv
+cp .deploy_git/repos/debian ./public/repos/ -rv
 git clone https://github.com/NekoSekaiMoe/hen_webpage public/hen --depth=1
 git clone https://github.com/NekoSekaiMoe/henkaku_webpage public/henkaku --depth=1
 mkdir -p -v public/gh-down
