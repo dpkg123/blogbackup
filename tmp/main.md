@@ -12,15 +12,15 @@ summary: 写赛博真经，享创创人生。
 截取自[ray 的博客](https://blog.mk1.io/posts/2025/reusable-workflows#composite-actions-%E5%92%8C-reusable-workflows):
 > 简单来说：Composite Actions 是复用多个步骤，例如设置运行时、安装依赖等；而 Reusable Workflows 则是复用整个工作流，包括触发条件、作业定义等（例如构建、测试、部署等）。
 
-那么一句话来概括就是，action.yml 属于 Reusable Workflows，github/workflows/*.yml 属于 Composite Actions 。
+那么一句话来概括就是，action.yml 属于 Composite Actions，github/workflows/*.yml 属于 Reusable Workflows.
 
 为什么要强调这一点，因为我看到很多 fork 才能用的仓库竟然标榜自己是 action，我承认 github 有 actions 选项卡但是那个是 workflow。
 
-再比如，workflow 可以发布到 market space，至于上文说的只有 Reusable Workflows 复用整个工作流，怎么说呢。虽然有 shellcheck action 这种复用的工作流。
+再比如，actions 可以发布到 market space，至于上文说的只有 Reusable Workflows 复用整个工作流，怎么说呢。虽然有 shellcheck action 这种复用的工作流。但是 Composite Actions 也是可以嵌套 actions 的。
 
-Reusable Workflows 更多的是设置诸如构建依赖这种，如 setup-python，而 Composite Actions 主要是进行作业(例如语法检查)为主。
+Composite Actions 更多的是设置诸如构建依赖这种，如 setup-python，而 Reusable Workflows 主要是进行作业(例如语法检查)为主。
 
-而 Reusable Workflows 的编写有多种方式，主流的有 Shell，Dockerfile 和 TypeScript. 本质上前两者属于一类，所以就一块说了。
+而 Composite Actions 的编写有多种方式，主流的有 Shell，Dockerfile 和 TypeScript. 本质上前两者属于一类，所以就一块说了。
 
 Shell 编写的优点是简单，缺点就是语法检查。你不能用 shellcheck 去检查 yml 中 shell 的语法，而 yamllint 更多是基于符不符合 yaml 语法而不是去检查 shell 代码的合法性。
 
