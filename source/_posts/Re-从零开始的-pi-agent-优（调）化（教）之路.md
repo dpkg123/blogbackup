@@ -44,6 +44,7 @@ https://linux.do/t/topic/2293134
 - 提问方面，用的是 @juicesharp/rpiv-ask-user-question 但是精简了提示词
 - todo 方面，用的是 @zhushanwen/pi-todo
 - mcp 方面，用的是 pi-mcp-adaptor，用于连接 gotls，typescript-language-server，clangd 和 pylsp。
+- 上下文压缩方面，一开始用的是 pi-context-prune。后来听 mzw 说默认压缩也可以用就干脆换成默认压缩了。
 
 大头讲完了，剩下的小头呢，pi-simplity 用于清理死代码。@juicesharp/rpiv-advusor 用于提交 pr 前的同行评审。我自己编写的 pi-extra-cmd 则是提供了三个参数：
 - /init，提取的 codex 的 init 文本，用于生成 AGENTS.md.
