@@ -44,7 +44,7 @@ https://linux.do/t/topic/2293134
 - 提问方面，用的是 @juicesharp/rpiv-ask-user-question 但是精简了提示词
 - todo 方面，用的是 @zhushanwen/pi-todo
 - mcp 方面，用的是 pi-mcp-adaptor，用于连接 computer use mcp 用于操控电脑。
-- lsp 方面，一开始用的是 pi-lsp，提供基础的 lsp 功能，pi-lens 和 reoch-pi 太重了，后来卸载了因为功能不太够且现有模型能力已经很强了
+- lsp 方面，一开始用的是 pi-lsp，提供基础的 lsp 功能，pi-lens 和 reoch-pi 太重了，后来就自己写了一个，目前看来 clangd 有误报，gopls 不太积极。
 - 上下文压缩方面，一开始用的是 pi-context-prune。后来听 mzw 说默认压缩也可以用就干脆换成默认压缩了。
 
 大头讲完了，剩下的小头呢，pi-simplity 用于清理死代码。@juicesharp/rpiv-advusor 用于提交 pr 前的同行评审。我自己编写的 pi-extra-cmd 则是提供了三个参数：
@@ -58,6 +58,6 @@ https://linux.do/t/topic/2293134
 
 至于其他方面，goal 插件没装，感觉用不到。plan mode 同样没装。所以权限什么的也没装。默认就是 yolo mode。运行这么多天以来没见过误删文件的情况。
 
-实测下来，north mini code 输入你好回应后的 system prompt 占用 6.2k，muse spark 1.2 contributors 占用 7.8k。这样。
+实测下来，north mini code 输入你好回应后的 system prompt 占用 6.9k，muse spark 1.2 contributors 占用 8.5k。glm5.3 占用 8.2k，这样。
 
 现在我的 coding agent 除了 pi 以外就剩一个特别难用的 antigravity 用于使用 gemini 模型了。主要是我权益在主号，而且听说反代容易封号就没弄。
