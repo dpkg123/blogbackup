@@ -4,12 +4,12 @@ date: 2026-09-01 15:07:20
 tags:
 - pi
 - agent
-summary: 你是谁？请支持 pi codibg agent!
+summary: 你是谁？请支持 pi coding agent!
 ---
 
 在用了一段时间后，感觉 pi 是越来越得心应手力！（喜）
 
-自从 iflow 停止服务后我就一只接入别的第三方模型用的 iflow，它那个简洁的ui 和计划模式和 yolo 模式我很喜欢，但是有几个槽点：
+自从 iflow 停止服务后我就一直接入别的第三方模型用的 iflow，它那个简洁的ui 和计划模式和 yolo 模式我很喜欢，但是有几个槽点：
 - 切换模型需要重新填模型 id，不能一键切换
 - 部分模型调用工具失败
 - 默认输出的 AGENTS.md 有点太长了
@@ -56,6 +56,6 @@ https://linux.do/t/topic/2293134
 
 至于其他方面，goal 插件没装，感觉用不到。plan mode 同样没装。所以权限什么的也没装。默认就是 yolo mode。运行这么多天以来没见过误删文件的情况。
 
-实测下来，notrh mini code 输入你好回应后的 system prompt 占用 6.2k，muse spark 1.2 contributors 占用 7.8k。这样。
+实测下来，north mini code 输入你好回应后的 system prompt 占用 6.2k，muse spark 1.2 contributors 占用 7.8k。这样。
 
 现在我的 coding agent 除了 pi 以外就剩一个特别难用的 antigravity 用于使用 gemini 模型了。主要是我权益在主号，而且听说反代容易封号就没弄。
