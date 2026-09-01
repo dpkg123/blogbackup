@@ -54,7 +54,8 @@ https://linux.do/t/topic/2293134
 
 关于我自己写的 package，可以从 https://github.com/NekoSekaiMoe/pi-packages 中获取。
 
+至于其他方面，goal 插件没装，感觉用不到。plan mode 同样没装。所以权限什么的也没装。默认就是 yolo mode。运行这么多天以来没见过误删文件的情况。
+
 实测下来，notrh mini code 输入你好回应后的 system prompt 占用 6.2k，muse spark 1.2 contributors 占用 7.8k。这样。
 
-
-
+现在我的 coding agent 除了 pi 以外就剩一个特别难用的 antigravity 用于使用 gemini 模型了。主要是我权益在主号，而且听说反代容易封号就没弄。
