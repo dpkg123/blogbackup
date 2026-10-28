@@ -21,7 +21,7 @@ jobs:
 
         with:
 
-         node-version: 24
+         node-version: 26
          cache: yarn
       
       - name: Install Hexo
